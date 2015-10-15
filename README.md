@@ -1,0 +1,1 @@
+# ecmascript-arrow-function-declaration
