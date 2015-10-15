@@ -79,7 +79,7 @@ const squares = map(x => x * x);
 
 Here we would have an error since `squares` is `undefined` when calling `compose`.
 
-**Summary:** In order to let developers use benefits from both function declarations and arrow functions we need to arraow function declaration syntax. One of use cases for this is to be able to declare implementation detals later in the scope like your can see [here](https://github.com/graphql/graphql-js/blob/master/src/execution/execute.js).
+**Summary:** In order to let developers use benefits from both function declarations and arrow functions we need to add arrow function declaration syntax. One of use cases for this is to be able to declare implementation details later in the scope like your can see [here](https://github.com/graphql/graphql-js/blob/master/src/execution/execute.js).
 
 ## Proposed syntax
 
