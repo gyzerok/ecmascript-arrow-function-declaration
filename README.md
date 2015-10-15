@@ -108,3 +108,4 @@ function fname(fargs) {
   fbody
 }
 ```
+With all bindings like in arrow functions.
