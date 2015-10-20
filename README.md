@@ -1,6 +1,6 @@
 # Arrow function declaration
 
-## ES7 Proposal
+## ES7/8 Proposal
 
 **Stage:** 0
 
