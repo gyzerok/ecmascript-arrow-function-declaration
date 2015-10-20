@@ -39,7 +39,6 @@ function compose(fn1, fn2) {
   // Implementation
 }
 
-// For example
 function map(predicate) {
   return function (list) {
     // Implementation
