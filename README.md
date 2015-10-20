@@ -84,19 +84,25 @@ Here we would have an error since `squares` is `undefined` when calling `compose
 ## Proposed syntax
 
 ```js
+function fname(fargs) => fbody
+function fname(fargs) => {
+  fbody
+}
+```
+
+Here are alternatives (but we do not have reserved keywords for them):
+```js
 def fname(fargs) => fbody
 def fname(fargs) => {
   fbody
 }
-```
-or
-```js
+
 fn fname(fargs) => fbody
 fn fname(fargs) => {
   fbody
 }
 ```
-Personally I prefer the first way,
+Personally I prefer the first way.
 
 ## Desugaring
 
