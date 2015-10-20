@@ -86,6 +86,11 @@ function fname(fargs) => fbody
 function fname(fargs) => {
   fbody
 }
+// or
+function fname(fargs) = fbody
+function fname(fargs) = {
+  fbody
+}
 ```
 
 Here are alternatives (but we do not have reserved keywords for them):
