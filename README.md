@@ -68,15 +68,14 @@ const squares = map(x => x * x)
 The problem here: we have different things in these two ways because first is function declaration and the second is function expression. The primary drawback of using the second approach hides inside hoisting mechanism. When defining function with function expressions order does really matter.
 
 ```js
-const sumOfSquares = compose(
-  reduce((x, y) => x + y, 0),
-  squares
-);
+const sumOfSquares = compose(sum, squares);
+
+const sum = reduce((x, y) => x + y, 0);
 
 const squares = map(x => x * x);
 ```
 
-Here we would have an error since `squares` is `undefined` when calling `compose`.
+Here we would have an error since `squares` and `sum` are `undefined` when calling `compose`.
 
 **Summary:** In order to let developers use benefits from both function declarations and arrow functions we need to add arrow function declaration syntax. One of use cases for this is to be able to declare implementation details later in the scope like your can see [here](https://github.com/graphql/graphql-js/blob/master/src/execution/execute.js).
 
