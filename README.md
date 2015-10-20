@@ -65,7 +65,7 @@ function squares(list) {
 const squares = map(x => x * x)
 ```
 
-The problem here is we have different things in these to ways because first is function declaration and the second is function expression. The primary drawback of using the second approach hides inside hoisting mechanism. When defining function with function expressions order does really matter.
+The problem here: we have different things in these two ways because first is function declaration and the second is function expression. The primary drawback of using the second approach hides inside hoisting mechanism. When defining function with function expressions order does really matter.
 
 ```js
 const sumOfSquares = compose(
