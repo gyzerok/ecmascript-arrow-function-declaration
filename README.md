@@ -70,7 +70,7 @@ The problem here is we have different things in these to ways because first is f
 
 ```js
 const sumOfSquares = compose(
-  reduce((x, y) => x + y, 0)
+  reduce((x, y) => x + y, 0),
   squares
 );
 
